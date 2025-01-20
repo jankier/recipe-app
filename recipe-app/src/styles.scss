@@ -1,6 +1,5 @@
-@use './scss/styles/variables';
-@use './scss/styles/material-override';
-
+@use 'scss/abstract/colors.scss' as c;
+@use 'scss/material/material-override.scss' as m;
 
 html,
 body,
@@ -18,9 +17,9 @@ body,
 app-root {
   height: 100%;
   font-weight: normal;
-  color: variables.$text-color;
+  color: c.$text-color;
   font-family: Roboto, sans-serif;
-  background-color: variables.$background-color;
+  background-color: c.$background-color;
 }
 
 app-root {

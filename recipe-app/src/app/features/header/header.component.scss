@@ -1,0 +1,30 @@
+@use '../../../scss/abstract/colors.scss' as c;
+
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: c.$background-color;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        &-logo{
+            display: flex;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: c.$text-color;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    }
+}
