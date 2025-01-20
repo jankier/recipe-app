@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@use './scss/styles/variables';
+@use './scss/styles/material-override';
+
+
+html,
+body,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+app-root {
+  height: 100%;
+  font-weight: normal;
+  color: variables.$text-color;
+  font-family: Roboto, sans-serif;
+  background-color: variables.$background-color;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
